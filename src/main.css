@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.goods-container__loading {
+    @apply justify-center items-center
+}
+
+.goods-container__loaded {
+    @apply  justify-start items-start flex-col
+}
+
+.goods-container__default {
+    @apply  bg-slate-800 w-full text-teal-500 p-5 rounded-md shadow-md shadow-black flex rounded-t-none
+}
+
+.add-button__default {
+    @apply rounded-md bg-slate-800 text-teal-500 hover:bg-slate-500 pl-4 pr-4 pt-2 pb-2 font-semibold mb-5
+}
+
+.spinner-default {
+    @apply ml-8 inline-block h-5 w-5 animate-spin rounded-full border-4 border-solid border-current border-r-transparent align-[-0.125em] motion-reduce:animate-[spin_1.5s_linear_infinite]
+}
+
+.toggle-button {
+    @apply !text-teal-500 focus:!bg-teal-500 focus:!text-slate-900
+}
+
+.submit-button {
+    @apply !text-slate-900 !pl-5 !pr-5 !pt-3 !pb-3 !rounded-md !bg-teal-500 hover:!bg-slate-500 hover:!border-2 hover:!border-teal-500 hover:!text-teal-500
+}
